@@ -1,7 +1,9 @@
 public class Main {
     public static void main(String[] args) {
+
         System.out.println("Task 1");
         int clientOS = 1;
+
         if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         } else if (clientOS == 1) {
@@ -9,8 +11,10 @@ public class Main {
         } else {
             System.out.println("Не правильно выбрана система!");
         }
+
         System.out.println("Task 2");
         int clientDeviceYear = 2010;
+
         if (clientOS == 1 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для Android по ссылке");
         } else if (clientOS == 1 && clientDeviceYear < 2015) {
@@ -21,13 +25,15 @@ public class Main {
         } else if (clientOS == 0 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
         }
+
         System.out.println("Task 3");
         int year = 1988;
-        if (year >= 1584 && year % 4 == 0 || year % 400 == 0) {
+        if ((year >= 1584 && year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
             System.out.println(year + " год является високосным");
         } else {
             System.out.println(year + " год не является високосным");
         }
+
         System.out.println("Task 4");
         int deliveryDistance = 95;
         if (deliveryDistance <=20) {
@@ -39,6 +45,7 @@ public class Main {
         } else {
             System.out.println("Доставки нет");
         }
+
         System.out.println("Task 5");
         int monthNumber = 5;
         switch (monthNumber) {
